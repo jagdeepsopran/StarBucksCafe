@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react'
-import './app.css'
+import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Home from './components/home/Home'
 import Products from './components/products/Products'
@@ -7,7 +7,7 @@ import Contact from './components/contact/Contact'
 import Queries from './components/queries/Queries'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from './components/about/About'
-import { HiH1 } from 'react-icons/hi2'
+
 
 export const themeContext = createContext();
 export const clickContext = createContext();
@@ -31,17 +31,17 @@ const App = () => {
     <BrowserRouter>
       <clickContext.Provider value={toggleTheme}>
         <themeContext.Provider value={theme}>
-          <variableContext.Provider value={{cssVariables , handleThumbnailClick}}>
-          <Routes>
-            <Route exact path='/' element={<Navbar />}>
-              <Route path='/' element={<Home />} />
-              <Route path='/Products' element={<Products />} />
-              <Route path='/About' element={<About />} />
-              <Route path='/Contact' element={<Contact />} />
-              <Route path='/Queries' element={<Queries />} />
-            </Route>
-            <Route path='/*' element={<h1>Page Not Found</h1>}/>
-          </Routes>
+          <variableContext.Provider value={{ cssVariables, handleThumbnailClick }}>
+            <Routes>
+              <Route exact path='/' element={<Navbar />}>
+                <Route path='/' element={<Home />} />
+                <Route path='/Products' element={<Products />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/Contact' element={<Contact />} />
+                <Route path='/Queries' element={<Queries />} />
+              </Route>
+              <Route path='/*' element={<h1>Page Not Found</h1>} />
+            </Routes>
           </variableContext.Provider>
         </themeContext.Provider>
       </clickContext.Provider>
