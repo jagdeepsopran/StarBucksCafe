@@ -2,9 +2,9 @@
     position: relative;
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 10px; */
     /* flex-direction: column; */
 }
 
@@ -12,7 +12,7 @@
     position: relative;
     z-index: 1;
     width: 40%;
-    margin: 35px;
+    /* margin: 35px; */
     background: #f2f2f2;
     padding: 30px;
     border-radius: 10px;
@@ -69,7 +69,7 @@ textarea {
 }
 
 .submit-btn {
-    width: 200px;
+    width: 100%;
     padding: 10px 20px;
     background: #017143;
     color: #fff;
@@ -80,7 +80,7 @@ textarea {
     font-size: 1.2em;
     box-shadow: 2px 3px 4px black;
     margin-top: 15px;
-    transform: translateX(55%);
+    /* transform: translateX(55%); */
 }
 
 .submit-btn:hover {
@@ -97,7 +97,7 @@ textarea {
 .contact-detials {
     position: relative;
     width: 40%;
-    margin: 35px;
+    /* margin: 35px; */
     background: #f2f2f2;
     padding: 30px;
     border-radius: 10px;
@@ -184,4 +184,35 @@ textarea {
     height: 100%;
     background: #017143;
     clip-path: circle(300px at left 500px);
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 60%;
+    height: 80%;
+  }
+  .contact-container{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 486px) {
+  .contact {
+    width: 80%;
+    height: 70%;
+    
+  }
+  .contact-container{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .contact-detials{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 }

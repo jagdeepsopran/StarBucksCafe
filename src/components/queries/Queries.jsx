@@ -11,7 +11,7 @@ const Queries = () => {
   }
   return (
     <div className={`query ${theme === "light" ? "light" : "dark"}`}>
-      <div className={`contact ${theme === "light" ? "light" : "dark"}`}>
+      <div className={`contact`}>
         <h2>Any Queries</h2>
         <p>Please feel free to contact us for any questions or concerns.</p>
         <form onSubmit={submitHandler} className="form-box">

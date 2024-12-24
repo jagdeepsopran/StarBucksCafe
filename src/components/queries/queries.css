@@ -4,3 +4,36 @@
     align-items: center;
     width: 100%;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 80%;
+  width: 40%;
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  transition: all 1s ease-in-out;
+}
+/* .container:hover{
+  transform: translateY(-15px) skew(-3deg ,-3deg) rotate(3deg);
+  box-shadow: 30px 30px 15px 15px rgb(78, 40, 98);
+} */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 15px; */
+  width: 100%;
+}

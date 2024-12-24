@@ -20,7 +20,7 @@ const Navbar = () => {
         <>
             <header className={`${theme === "light" ? "light" : "dark"}`}>
                 <img src="../logo.png" id='logo' alt="" />
-                <ul className={`navigation ${theme === "light" ? "light" : "dark"}`} >
+                <ul className={`navigation`} >
                     <li className={activeItem === "" ? "active" : ""} style={activeItem === "" ? { backgroundColor: `${cssVariables}` } : {}} nonce='' onClick={(e) => handleClick(e)}>Home</li>
                     <li className={activeItem === "Products" ? "active" : ""} style={activeItem === "Products" ? { backgroundColor: `${cssVariables}` } : {}} nonce='Products' onClick={(e) => handleClick(e)}>Products</li>
                     <li className={activeItem === "About" ? "active" : ""} style={activeItem === "About" ? { backgroundColor: `${cssVariables}` } : {}} nonce='About' onClick={(e) => handleClick(e)}>About</li>
