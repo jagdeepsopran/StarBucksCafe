@@ -1,0 +1,87 @@
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.content .text-box {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .text-box h2 {
+    /* color: #333; */
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500px;
+}
+
+.content .text-box h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .text-box p {
+    /* color: #333; */
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #fff;
+    color: #017143;
+    border: 2px solid #017143;
+}
+
+.image-box {
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    z-index: 1;
+}
+
+.image-box img {
+    max-width: 350px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 600px;
+}
+
+.thumbnails li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumbnails li:hover {
+    transform: translateY(-15px);
+}
+
+.thumbnails li img {
+    max-width: 60px;
+}

@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    display: inline-block;
+    /* color: #333; */
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.active {
+    background: var(--green);
+    color: #fff;
+    border-radius: 25px;
+}
+
+header ul li:hover {
+    background: rgb(173, 168, 168);
+    color: #fff;
+    border-radius: 25px;
+}

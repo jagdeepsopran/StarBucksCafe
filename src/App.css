@@ -1,0 +1,45 @@
+:root{
+  --green:#017143;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.dark{
+  color:white;
+  background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+
+.about-para {
+  position: relative;
+  /* color: #033e34; */
+  font-size: 2em;
+  line-height: 1.6em;
+  margin: 22px;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+  /* color: rgb(5, 76, 33); */
+}
