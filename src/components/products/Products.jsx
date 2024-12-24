@@ -15,7 +15,7 @@ const Products = () => {
           product.map((item, idx) => {
             return (
               <div key={idx} className="product-card">
-                <img src={`../src/images/img${item}.png`} alt={`Product Image`} />
+                <img src={`../img${item}.png`} alt={`Product Image`} />
                 <h3>Product {item}</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel urna vel dui pulvinar pulvinar vel non nisi.</p>
                 <div className="price-add">

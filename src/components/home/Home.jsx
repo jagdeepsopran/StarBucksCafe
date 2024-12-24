@@ -16,18 +16,18 @@ const Home = () => {
         </p>
         <ul className="thumbnails">
           <li onClick={() => handleThumbnailClick('#017143')}>
-            <img src="../src/images/thumb1.png" alt="" />
+            <img src="../thumb1.png" alt="" />
           </li>
           <li onClick={() => handleThumbnailClick('#ebbcc9')}>
-            <img src="../src/images/thumb2.png" alt="" />
+            <img src="../thumb2.png" alt="" />
           </li>
           <li onClick={() => handleThumbnailClick('#9f287b')}>
-            <img src="../src/images/thumb3.png" alt="" />
+            <img src="../thumb3.png" alt="" />
           </li>
         </ul>
       </div>
       <div className="image-box">
-        <img src={`../src/images/img1.png`} alt="" />
+        <img src={`../img1.png`} alt="" />
       </div>
       <div className="circle" style={{background:`${cssVariables}`}}></div>
     </div>
