@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <>
             <header className={`${theme === "light" ? "light" : "dark"}`}>
-                <img src="../src/images/logo.png" id='logo' alt="" />
+                <img src="../logo.png" id='logo' alt="" />
                 <ul className={`navigation ${theme === "light" ? "light" : "dark"}`} >
                     <li className={activeItem === "" ? "active" : ""} style={activeItem === "" ? { backgroundColor: `${cssVariables}` } : {}} nonce='' onClick={(e) => handleClick(e)}>Home</li>
                     <li className={activeItem === "Products" ? "active" : ""} style={activeItem === "Products" ? { backgroundColor: `${cssVariables}` } : {}} nonce='Products' onClick={(e) => handleClick(e)}>Products</li>
