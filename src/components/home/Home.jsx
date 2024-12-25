@@ -10,7 +10,7 @@ const Home = () => {
     <div className={` ${theme === "light" ? "light" : "dark"} content`}>
       <div className="text-box">
         <h2>It's not just Coffee<br />It's <span id="output" style={{color:`${cssVariables}`}}>Starbucks</span></h2>
-        <p className='bg-orange-400'>MAKE EVERY SIP MORE REWARDING <br />
+        <p>MAKE EVERY SIP MORE REWARDING <br />
           Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food,
           get free refills, pay and order with your phone, and more.
         </p>

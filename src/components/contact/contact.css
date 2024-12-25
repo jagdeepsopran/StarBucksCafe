@@ -189,7 +189,7 @@ textarea {
 @media screen and (max-width: 768px) {
   .contact {
     width: 60%;
-    height: 80%;
+    height: 50%;
   }
   .contact-container{
     flex-direction: column;
@@ -200,7 +200,7 @@ textarea {
 @media screen and (max-width: 486px) {
   .contact {
     width: 80%;
-    height: 70%;
+    height: 50%;
     
   }
   .contact-container{
