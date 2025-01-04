@@ -17,8 +17,10 @@ export const variableContext = createContext();
 
 const App = () => {
   const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
+  const toggleTheme = (e) => {
     setTheme(theme === "light" ? "dark" : "light");
+    // e.target.parentNode.className = `${theme === "light" ? "light" : "dark"}`;
+    // console.log(e);
   };
 
   const [cssVariables, setCssVariables] = useState('#017143');

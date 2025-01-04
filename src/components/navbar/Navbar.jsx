@@ -15,10 +15,12 @@ const Navbar = () => {
     const [menu, setMenu] = useState("open");
 
     const handleClick = (e) => {
-        // setMenu(menu=="close" ? "open" : "close");
+        if (e.view.screen.availWidth < 1280) {
+            setMenu(menu == "close" ? "open" : "close");
+        }
         navigate(`/${e.target.nonce}`);
         setActiveItem(e.target.nonce);
-        // console.log(e);
+        console.log(e);
     }
     return (
         <>
@@ -31,8 +33,8 @@ const Navbar = () => {
                     <li className={activeItem === "Contact" ? "active" : ""} style={activeItem === "Contact" ? { backgroundColor: `${cssVariables}` } : {}} nonce='Contact' onClick={(e) => handleClick(e)}>Contact</li>
                     <li className={activeItem === "Queries" ? "active" : ""} style={activeItem === "Queries" ? { backgroundColor: `${cssVariables}` } : {}} nonce='Queries' onClick={(e) => handleClick(e)}>Queries</li>
                 </ul>
-                    <GiHamburgerMenu className="md:hidden absolute top-3 right-5 size-6" onClick={()=>setMenu(menu == "close" ? "open":"close")}/>
-                {theme === "light" ? <IoSunnyOutline onClick={toggleTheme} className="icon" /> : <FaMoon onClick={toggleTheme} className="icon" />}
+                <GiHamburgerMenu className="md:hidden absolute top-3 right-5 size-6" onClick={() => setMenu(menu == "close" ? "open" : "close")} />
+                {theme === "light" ? <IoSunnyOutline onClick={(e)=>toggleTheme(e)} className="icon" /> : <FaMoon onClick={toggleTheme} className="icon" />}
             </header>
 
             <Outlet />
