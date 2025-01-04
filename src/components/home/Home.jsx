@@ -26,7 +26,7 @@ const Home = () => {
           </li>
         </ul>
       </div>
-      <div className="image-box">
+      <div className="image-box hidden lg:flex">
         <img src={`../img1.png`} alt="" />
       </div>
       <div className="circle" style={{background:`${cssVariables}`}}></div>
